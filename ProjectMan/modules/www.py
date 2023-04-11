@@ -74,14 +74,14 @@ async def pingme(client: Client, message: Message):
     await xx.edit("**40% ████▒▒▒▒▒▒**")
     await xx.edit("**60% ██████▒▒▒▒**")
     await xx.edit("**80% ████████▒▒**")
-    await xx.edit("**100% ██████████**")
+    await xx.edit("**100% CROTTTT💦💦**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **PONG!!🏓**\n"
-        f"├• **Pinger** - `%sms`\n"
-        f"├• **Uptime -** `{uptime}` \n"
-        f"└• **Owner :** {client.me.mention}" % (duration)
+        f"👉 **PONG!!⌛**\n"
+        f" **Pinger** - `%sms`\n"
+        f" **Uptime -** `{uptime}` \n"
+        f" **Owner :** {client.me.mention}" % (duration)
     )
 
 
@@ -89,17 +89,17 @@ async def pingme(client: Client, message: Message):
 async def kping(client: Client, message: Message):
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(message, "8✊===D")
-    await xx.edit("8=✊==D")
-    await xx.edit("8==✊=D")
-    await xx.edit("8===✊D")
+    xx = await edit_or_reply(message, "10⌛===D")
+    await xx.edit("30=⌛==D")
+    await xx.edit("50==⌛=D")
+    await xx.edit("100===⌛D")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await xx.edit(
-        f"❏ **PONG!!🏓**\n"
-        f"├• **Pinger** - `%sms`\n"
-        f"├• **Uptime -** `{uptime}` \n"
-        f"└• **Owner :** {client.me.mention}" % (duration)
+        f" **PONG!!⌛**\n"
+        f" **Pinger** - `%sms`\n"
+        f" **Uptime -** `{uptime}` \n"
+        f" **Owner :** {client.me.mention}" % (duration)
     )
 
 
