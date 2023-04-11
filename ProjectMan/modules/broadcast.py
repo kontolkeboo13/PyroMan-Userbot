@@ -39,7 +39,7 @@ while 0 < 6:
 del _GCAST_BLACKLIST
 
 
-@Client.on_message(filters.command("gcast", cmd) & filters.me)
+@Client.on_message(filters.command("gikes", cmd) & filters.me)
 async def gcast_cmd(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         Man = await edit_or_reply(message, "`Started global broadcast...`")
@@ -66,7 +66,7 @@ async def gcast_cmd(client: Client, message: Message):
                     error += 1
                     await asyncio.sleep(0.3)
     await Man.edit_text(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{error}` **Grup**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup tod, Gagal Mengirim Pesan Ke** `{error}` **Grup tod**"
     )
 
 
@@ -170,7 +170,7 @@ add_command_help(
     "broadcast",
     [
         [
-            "gcast <text/reply>",
+            "gikes <text/reply>",
             "Mengirim Global Broadcast pesan ke Seluruh Grup yang kamu masuk. (Bisa Mengirim Media/Sticker)",
         ],
         [
