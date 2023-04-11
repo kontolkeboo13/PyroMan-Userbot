@@ -35,13 +35,13 @@ modules = CMD_HELP
 alive_logo = (
     gvarstatus("ALIVE_LOGO") or "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg"
 )
-emoji = gvarstatus("ALIVE_EMOJI") or "⚡️"
-alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hey, I am alive."
+emoji = gvarstatus("ALIVE_EMOJI") or "✨"
+alive_text = gvarstatus("ALIVE_TEKS_CUSTOM") or "Hey, anak kontol."
 
 
 @Client.on_message(filters.command(["alive", "awake"], cmd) & filters.me)
 async def alive(client: Client, message: Message):
-    xx = await edit_or_reply(message, "⚡️")
+    xx = await edit_or_reply(message, "✨")
     await asyncio.sleep(2)
     send = client.send_video if alive_logo.endswith(".mp4") else client.send_photo
     uptime = await get_readable_time((time.time() - StartTime))
